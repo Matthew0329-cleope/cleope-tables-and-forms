@@ -15,7 +15,7 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Invoice Table Styles */
+
 .invoice-header {
     background-color: #3a5a78;
     color: #ffffff;
@@ -86,7 +86,7 @@ body {
     text-align: right;
 }
 
-/* Form Styles */
+
 .form-header {
     background-color: #3a5a78;
     color: #ffffff;
