@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables and Forms Exercise</title>
+    <style></style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Invoice Table -->
+    <div class="container">
+        <div class="invoice-header">Invoice Tabular data</div>
+        <table class="invoice-table">
+            <tr>
+                <td class="invoice-number">Invoice #123456789</td>
+                <td class="invoice-date">14 January 2025</td>
+            </tr>
+            <tr>
+                <td class="address-header">
+                    <strong>Pay to:</strong><br>
+                    Acme Billing Co.<br>
+                    123 Main St.<br>
+                    Cityville, NA 12345
+                </td>
+                <td class="address-header">
+                    <strong>Customer:</strong><br>
+                    John Smith<br>
+                    321 Willow Way<br>
+                    Southeast Northwestershire, MA 54321
+                </td>
+            </tr>
+        </table>
+        
+        <table class="invoice-table">
+            <tr class="items-header">
+                <th>Name / Description</th>
+                <th>Qty.</th>
+                <th>@</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>Paperclips</td>
+                <td>1000</td>
+                <td>0.01</td>
+                <td class="price-cell">10.00</td>
+            </tr>
+            <tr>
+                <td>Staples (box)</td>
+                <td>100</td>
+                <td>1.00</td>
+                <td class="price-cell">100.00</td>
+            </tr>
+            <tr>
+                <td>Bond Paper (box)</td>
+                <td>100</td>
+                <td>1.00</td>
+                <td class="price-cell">110.00</td>
+            </tr>
+            <tr class="subtotal-row">
+                <td colspan="3">Subtotal</td>
+                <td class="price-cell">110.00</td>
+            </tr>
+            <tr class="tax-row">
+                <td colspan="2">Tax</td>
+                <td>8%</td>
+                <td class="price-cell">8.80</td>
+            </tr>
+            <tr class="grand-total">
+                <td colspan="3">Grand Total</td>
+                <td class="price-cell">$ 118.80</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Form -->
+    <div class="container">
+        <div class="form-header">
+            <span>Name</span>
+            <span>Value</span>
+        </div>
+        <form action="#" method="post">
+            <table class="form-table">
+                <tr>
+                    <td class="form-label">Name:</td>
+                    <td><input type="text" placeholder="Type your name here"></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Sex:</td>
+                    <td>
+                        <input type="radio" id="male" name="sex" value="male" checked>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="sex" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="sex" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-label">Eye Color</td>
+                    <td>
+                        <select>
+                            <option value="black" selected>black</option>
+                            <option value="brown">brown</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                            <option value="hazel">hazel</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-label">Check all that Apply</td>
+                    <td>
+                        <div><input type="checkbox" id="tall" name="attributes" value="tall">
+                        <label for="tall">Over 6ft. Tall</label></div>
+                        <div><input type="checkbox" id="overweight" name="attributes" value="overweight">
+                        <label for="overweight">Over 200 pounds</label></div>
+                        <div><input type="checkbox" id="underweight" name="attributes" value="underweight">
+                        <label for="underweight">Less than 200 pounds</label></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form-label">Describe your athletic ability</td>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit" class="submit-button">Enter my Information</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9fbfd;
+    color: #2c3e50;
+}
+
+.container {
+    margin-bottom: 40px;
+    border: 2px solid #3a5a78;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Invoice Table Styles */
+.invoice-header {
+    background-color: #3a5a78;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.invoice-table th, 
+.invoice-table td {
+    border: 1px solid #d1e0e8;
+    padding: 8px;
+}
+
+.invoice-number {
+    background-color: #3a5a78;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.invoice-date {
+    background-color: #3a5a78;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.address-header {
+    background-color: #f0f7fa;
+    padding: 12px;
+    border-bottom: 1px solid #d1e0e8;
+}
+
+.items-header {
+    background-color: #3a5a78;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.subtotal-row {
+    font-weight: bold;
+    background-color: #f0f7fa;
+}
+
+.tax-row {
+    font-weight: normal;
+    background-color: #f0f7fa;
+}
+
+.grand-total {
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: #d4edda;
+}
+
+.price-cell {
+    background-color: #e8f5e9;
+    text-align: right;
+}
+
+/* Form Styles */
+.form-header {
+    background-color: #3a5a78;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.form-table td {
+    border: 1px solid #d1e0e8;
+    padding: 12px;
+}
+
+.form-label {
+    color: #3a5a78;
+    width: 40%;
+    vertical-align: top;
+    background-color: #f0f7fa;
+    font-weight: 600;
+}
+
+input[type="text"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b0bec5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #2c3e50;
+}
+
+input[type="text"]:focus, 
+select:focus, 
+textarea:focus {
+    border-color: #3a5a78;
+    outline: none;
+    box-shadow: 0 0 5px rgba(58, 90, 120, 0.3);
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.submit-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #43a047;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+    accent-color: #4caf50;
+}
+
+label {
+    margin-right: 15px;
+}
